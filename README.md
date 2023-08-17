@@ -1,9 +1,9 @@
 # Coworking Space Service Extension
-The Coworking Space Service is a set of APIs that enables users to request one-time tokens 
-and administrators to authorize access to a coworking space. 
+The Coworking Space Service is an API used by business analyst to monitor user activity
+in coworking space.
 
-This service follows a microservice pattern and the APIs are split into distinct services 
-that can be deployed and managed independently of one another.
+This service follows a microservice pattern and the API can be deployed and 
+managed independently of one another.
 
 
 ## Getting Started
