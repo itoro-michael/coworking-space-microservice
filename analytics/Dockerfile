@@ -4,10 +4,8 @@ EXPOSE 5153
 
 WORKDIR /analytics
 
-COPY ./analytics/requirements.txt requirements.txt
+COPY . .
 
 RUN pip install -r requirements.txt
-
-COPY ./analytics .
 
 CMD python app.py
