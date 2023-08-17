@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: analytics-api
-        image: 322221217685.dkr.ecr.us-east-1.amazonaws.com/coworking-space:0.0.1
+        image: 322221217685.dkr.ecr.us-east-1.amazonaws.com/coworking-space:20
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
@@ -52,8 +52,8 @@ spec:
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: db-secret
-              key: DB_PASSWORD
+              name: db-postgresql
+              key: postgres-password
         - name: DB_HOST
           valueFrom:
             configMapKeyRef:
