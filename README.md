@@ -90,12 +90,6 @@ There are multiple ways to set environment variables in a command. They can be s
 * `DB_PORT` (defaults to `5432`)
 * `DB_NAME` (defaults to `postgres`)
 
-If we set the environment variables by prepending them, it would look like the following:
-```bash
-DB_USERNAME=username_here DB_PASSWORD=password_here python app.py
-```
-The benefit here is that it's explicitly set. However, note that the `DB_PASSWORD` value is now recorded in the session's history in plaintext. There are several ways to work around this including setting environment variables in a file and sourcing them in a terminal session.
-
 3. Verifying The Application
 * Generate report for check-ins grouped by dates
 `curl <BASE_URL>/api/reports/daily_usage`
